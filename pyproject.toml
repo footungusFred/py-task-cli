@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "task-cli"
+version = "1.0.0"
+description = "A dependency-free terminal task manager with JSON persistence"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "PROJECT-INTERNET contributors"}]
+
+[project.scripts]
+taskcli = "taskcli.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
